@@ -2,7 +2,8 @@
 This project was done using django rest_framework
 
 ## The end points accessible are as follows:
-### '/books' with name 'books' - Request: GET, POST
+
+### 1. '/books' with name 'books' - Request: GET, POST
 - Function based view used [views.py](./api/views.py)
 - View name: getData
 - No input expected
@@ -15,8 +16,9 @@ This project was done using django rest_framework
       "pages": 268
       }
     ```
+
   
-### '/books/id' with name 'books_id' - Request: GET, PUT, DELETE
+### 2. '/books/id' with name 'books_id' - Request: GET, PUT, DELETE
 - Function based view used [views.py](./api/views.py)
 - View name: getDataDetail
 - input `id` for BookId expected for all
@@ -28,8 +30,9 @@ This project was done using django rest_framework
     "pages": 270
     }
     ```
+
   
-### '/favorites/users/userId' with name 'favorites_id' - Request : GET,POST,PUT
+### 3. '/favorites/users/userId' with name 'favorites_id' - Request : GET,POST,PUT
 - Function based view [views.py](./users/views.py)
 - View name: getUserData
 - input: `userId` which is the userId field of users model
@@ -49,8 +52,9 @@ This project was done using django rest_framework
         "bookId": 3
         }
   ```
+  
  
-### '/favorites/users/userId/bookId' with name 'delete_fav_book' -Request :DELETE
+### 4. '/favorites/users/userId/bookId' with name 'delete_fav_book' -Request :DELETE
 - Function based view [views.py](./users/views.py)
 - View name: delete_user_book
 - input: `userId` and `bookId` in url
